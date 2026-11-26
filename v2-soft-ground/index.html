@@ -7,9 +7,9 @@
 <title>Mitch Gainey | Somatic Therapy &amp; Focusing, London</title>
 <meta name="description" content="A slower kind of therapy. Focusing, Evidence-Based EFT and somatic work with Mitch Gainey, online and on Harley Street, London.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Hanken+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-:root{--display:Cormorant,serif;--d-light:300;--d-reg:400;--d-fsa:none;--d-ls:-.01em;--d-fvs:normal;--d-em:italic;--linen:#f4f0e8;--sage:#b9c2a8;--sage-d:#59644c;--forest:#2f3829;--clay:#c98d6b;--blush:#ead9c8;--ink:#2a2f26;--muted:#5f665a}
+:root{--display:"Hedvig Letters Serif",Georgia,serif;--d-light:400;--d-reg:400;--d-fsa:0.40;--d-ls:-.01em;--d-fvs:normal;--d-em:normal;--linen:#f4f0e8;--sage:#b9c2a8;--sage-d:#59644c;--forest:#2f3829;--clay:#c98d6b;--blush:#ead9c8;--ink:#2a2f26;--muted:#5f665a}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--linen);color:var(--ink);font:300 18px/1.7 "Hanken Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
@@ -125,16 +125,7 @@ footer div{display:flex;gap:22px}
 .rv.on{opacity:1;transform:none}
 @media(max-width:900px){nav a:not(.pill){display:none}.hero,.approach,.tgrid,.book .top{grid-template-columns:1fr}.hero{padding-top:120px}.grid3,.prices{grid-template-columns:1fr}.creds{grid-template-columns:1fr 1fr}.approach .imgs{position:static}.tag{left:0}.pause,.whom,.book{border-radius:28px;margin:0 8px}}
 @media(prefers-reduced-motion:reduce){.blob,.halo{animation:none}.rv{opacity:1;transform:none;transition:none}.orb{transition:none}}
-/* heading-font picker (preview only) */
-#fontpick{position:fixed;right:18px;top:92px;z-index:2147483646;display:flex;align-items:center;gap:8px;padding:6px 6px 6px 14px;background:rgba(20,22,18,.92);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.12);border-radius:999px;color:#cfcfc8;font:500 13px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;box-shadow:0 12px 32px -10px rgba(0,0,0,.5)}
-#fontpick select{font:inherit;background:#ebe4d6;color:#151812;border:0;border-radius:999px;padding:8px 12px;cursor:pointer}
-#fontpick a{color:#cfcfc8;text-decoration:none;white-space:nowrap;padding:8px 10px;border-radius:999px}#fontpick a:hover{background:rgba(255,255,255,.1);color:#fff}
-@media(max-width:700px){#fontpick{top:auto;bottom:74px;left:50%;right:auto;transform:translateX(-50%)}#fontpick label{display:none}}
 </style>
-<script src="fonts.js"></script>
-<script>
-(function(){var q=new URLSearchParams(location.search).get('font');var k=q||localStorage.getItem('mg-font')||'cormorant';if(q)localStorage.setItem('mg-font',q);MG_applyFont(k);})();
-</script>
 </head>
 <body>
 <header>
@@ -238,11 +229,7 @@ footer div{display:flex;gap:22px}
   </div>
 </section>
 
-<div id="fontpick" role="group" aria-label="Heading font"><label for="fsel">Heading font</label><select id="fsel"></select><a href="fonts.html" title="Compare all fonts side by side">Compare all</a></div>
 <script>
-(function(){const sel=document.getElementById('fsel');MG_FONTS.forEach(f=>{const o=document.createElement('option');o.value=f.key;o.textContent=f.name+(f.key==='cormorant'?' (current)':'');sel.appendChild(o)});
-sel.value=document.documentElement.dataset.font;
-sel.onchange=()=>{MG_applyFont(sel.value);localStorage.setItem('mg-font',sel.value);const u=new URL(location);u.searchParams.set('font',sel.value);history.replaceState(null,'',u)};})();
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.15});
 document.querySelectorAll('.rv').forEach(el=>io.observe(el));
 // breathing orb: 4s in, 4s out
