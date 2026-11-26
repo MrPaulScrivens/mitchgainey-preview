@@ -105,7 +105,8 @@ h1 em,h2 em,h3 em{font-style:normal;color:var(--sage-d)}
 .prose h2:first-child,.prose h3:first-child{margin-top:0}
 .prose a{text-underline-offset:4px;text-decoration-thickness:1px}
 .prose a:hover{color:var(--sage-d)}
-.prose blockquote{border-left:2px solid var(--clay);padding:4px 0 4px 24px;font-family:var(--display);font-size:26px;line-height:1.35}
+.prose blockquote{font-family:var(--display);font-size:28px;line-height:1.32;font-size-adjust:.40;padding:8px 0}
+.prose blockquote::before{content:"\201C";display:block;font-size:64px;line-height:.5;color:var(--clay);margin-bottom:6px}
 .prose .lead{font-size:22px;color:var(--ink)}
 .prose .callout{background:var(--paper);border-radius:var(--r-md);padding:26px 28px;border:1px solid var(--line)}
 .dots-list{list-style:none;display:grid;gap:10px}
