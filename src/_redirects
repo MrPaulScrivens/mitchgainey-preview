@@ -1,0 +1,8 @@
+# Old Squarespace URLs → new pages (301 keeps search rankings)
+/trainings                 /evidence-based-eft/                         301
+/trainings/*               /evidence-based-eft/                         301
+/work-with-me              /services/                                   301
+/cart                      /                                            301
+/resources/Blog%20Post%20Title%20One-3zaa9-zlxng-w23kj  /resources/what-is-somatic-therapy/  301
+/resources/Blog\ Post\ Title\ One-3zaa9-zlxng-w23kj     /resources/what-is-somatic-therapy/  301
+/strade-store/*            /focusing/                                   301

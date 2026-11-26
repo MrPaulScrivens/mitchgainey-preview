@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-GB" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<meta name="description" content="{{description}}">
+{{robots}}<link rel="canonical" href="{{canonical}}">
+<meta property="og:type" content="{{og_type}}">
+<meta property="og:site_name" content="Mitch Gainey">
+<meta property="og:title" content="{{title}}">
+<meta property="og:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}">
+<meta property="og:image" content="{{og_image}}">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f4f0e8">
+<link rel="icon" href="{{root}}assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Hanken+Grotesk:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{root}}assets/css/site.css?v={{version}}">
+{{schema}}</head>
+<body class="page-{{slug}}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="logo" href="{{root}}">Mitch Gainey</a>
+  <nav class="nav" aria-label="Main">
+    <a href="{{root}}about/"{{cur:about}}>About</a>
+    <a href="{{root}}services/"{{cur:services}}>1:1 Sessions</a>
+    <div class="dd{{ddcur}}">
+      <button type="button" aria-expanded="false" aria-haspopup="true">Trainings</button>
+      <div class="dd-menu">
+        <a href="{{root}}evidence-based-eft/"{{cur:ebeft}}>Evidence-Based EFT<small>Practitioner &amp; trauma trainings</small></a>
+        <a href="{{root}}focusing/"{{cur:focusing}}>Focusing<small>10-week online training</small></a>
+      </div>
+    </div>
+    <a href="{{root}}resources/"{{cur:resources}}>Resources</a>
+    <a href="{{root}}contact/"{{cur:contact}}>Contact</a>
+    <a class="pill" href="{{root}}services/">Work with me</a>
+  </nav>
+  <button class="burger" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span></button>
+</header>
+<div class="mobile-menu" id="mobile-menu">
+  <a href="{{root}}">Home</a>
+  <a href="{{root}}about/">About</a>
+  <a href="{{root}}services/">1:1 Sessions</a>
+  <a href="{{root}}evidence-based-eft/">Evidence-Based EFT</a>
+  <a href="{{root}}focusing/">Focusing</a>
+  <a href="{{root}}resources/">Resources</a>
+  <a href="{{root}}contact/">Contact</a>
+  <a class="btn solid" href="{{root}}services/">Work with me</a>
+</div>
+
+<main id="main">
+{{content}}
+</main>
+
+<footer class="site-footer{{footer_class}}">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="logo" href="{{root}}">Mitch Gainey</a>
+        <p>Somatic specialist and trainer. Focusing, Evidence-Based EFT and trauma-informed 1:1 work, online and on Harley Street, London.</p>
+        <p style="margin-top:14px"><a href="mailto:Mitch@becomeproject.com.au">Mitch@becomeproject.com.au</a></p>
+      </div>
+      <div><h3>Work together</h3><ul><li><a href="{{root}}services/">1:1 Sessions</a></li><li><a href="{{root}}evidence-based-eft/">Evidence-Based EFT</a></li><li><a href="{{root}}focusing/">Focusing</a></li></ul></div>
+      <div><h3>Explore</h3><ul><li><a href="{{root}}about/">About</a></li><li><a href="{{root}}resources/">Resources</a></li><li><a href="{{root}}contact/">Contact</a></li></ul></div>
+      <div><h3>Follow</h3><ul><li><a href="https://instagram.com/mitchgainey">Instagram</a></li><li><a href="https://www.facebook.com/mitch.gainey/">Facebook</a></li><li><a href="https://pneumasoma.substack.com/">Substack</a></li></ul></div>
+    </div>
+    <div class="base"><span>© {{year}} Mitch Gainey</span><span>I am not a psychologist and do not diagnose mental health conditions. Practising within a clear scope, with ongoing supervision.</span></div>
+  </div>
+</footer>
+<script src="{{root}}assets/js/site.js?v={{version}}" defer></script>
+</body>
+</html>
