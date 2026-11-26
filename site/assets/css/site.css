@@ -14,7 +14,9 @@ body{background:var(--linen);color:var(--ink);font:300 18px/1.7 var(--body);-web
 img{max-width:100%;height:auto;display:block}
 a{color:inherit}
 strong,b{font-weight:500}
-h1,h2,h3,h4{font-family:var(--display);font-weight:400;line-height:1.08;letter-spacing:-.01em;font-size-adjust:.40}
+h1,h2,h3,h4{font-family:var(--display);font-weight:400;line-height:1;letter-spacing:-.01em;font-size-adjust:.40}
+h1{line-height:.96}
+h3,h4{line-height:1.04}
 h1 em,h2 em,h3 em{font-style:normal;color:var(--sage-d)}
 .dark h1 em,.dark h2 em{color:var(--clay)}
 .wrap{max-width:1200px;margin:0 auto;padding:0 32px}
